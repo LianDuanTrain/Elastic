@@ -1,0 +1,803 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "targetLoudness" : -18.0,
+  "shouldApplyLoudnessNormalization" : true,
+  "videoFormatFrameRate" : 30,
+  "audioFormatSampleRate" : 44100,
+  "width" : 1920.0,
+  "height" : 1080.0,
+  "version" : "5.0",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia",
+    "platform" : "Windows",
+    "version" : "21.0"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "ElasticBG.png",
+      "rect" : [0, 0, 1920, 1080],
+      "lastMod" : "20211207T103036",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 1920, 1080],
+          "sampleRate" : 0,
+          "bitDepth" : 32,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211206T224233.402250"
+      }
+    },
+    {
+      "id" : 2,
+      "src" : "wave.mp3",
+      "rect" : [0, 0, 0, 0],
+      "lastMod" : "20210105T195352",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 185467500],
+          "type" : 2,
+          "editRate" : 10000000,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -16.6955131625049,
+          "peakLevel" : 0.940275430679321,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20211206T234605.678115"
+      }
+    }
+  ],
+  "timeline" : {
+    "id" : 3,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 4,
+                    "_type" : "Group",
+                    "parameters" : {
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0,
+                      "volume" : 1.0
+                    },
+                    "tracks" : [
+                      {
+                        "trackIndex" : 0,
+                        "medias" : [
+                          {
+                            "id" : 5,
+                            "_type" : "IMFile",
+                            "src" : 1,
+                            "trackNumber" : 0,
+                            "trimStartSum" : 0,
+                            "attributes" : {
+                              "ident" : "ElasticBG"
+                            },
+                            "parameters" : {
+                              "translation0" : -2.27373675443232e-13,
+                              "translation1" : 5.6843418860808e-14,
+                              "sourceCrop0" : 0.0,
+                              "sourceCrop1" : 0.0,
+                              "sourceCrop2" : 0.0,
+                              "sourceCrop3" : 0.0,
+                              "geometryCrop0" : 0.0,
+                              "geometryCrop1" : 0.0,
+                              "geometryCrop2" : 0.0,
+                              "geometryCrop3" : 0.0
+                            },
+                            "effects" : [
+
+                            ],
+                            "start" : 0,
+                            "duration" : 150,
+                            "mediaStart" : 0,
+                            "mediaDuration" : 1,
+                            "scalar" : 1,
+                            "metadata" : {
+                              "clipSpeedAttribute" : false,
+                              "default-height" : 1080.0,
+                              "default-translation0" : 0.0,
+                              "default-translation1" : 0.0,
+                              "default-width" : 1920.0
+                            },
+                            "animationTracks" : {
+
+                            }
+                          }
+                        ],
+                          "ident" : "",
+                          "audioMuted" : false,
+                          "videoHidden" : false,
+                          "magnetic" : false,
+                          "matte" : 0,
+                          "solo" : false,
+                          "metadata" : {
+                            "IsLocked" : "False",
+                            "WinTrackHeight" : "56"
+                          }
+                      },
+                      {
+                        "trackIndex" : 1,
+                        "medias" : [
+                          {
+                            "id" : 6,
+                            "_type" : "Callout",
+                            "def" : {
+                              "kind" : "remix",
+                              "shape" : "text",
+                              "style" : "basic",
+                              "enable-ligatures" : 1.0,
+                              "height" : 484.0,
+                              "line-spacing" : 0.0,
+                              "width" : 2373.39259259259,
+                              "word-wrap" : 1.0,
+                              "horizontal-alignment" : "center",
+                              "resize-behavior" : "resizeText",
+                              "text" : "ELK Crash Course\rWhat is Elasticsearch ?",
+                              "vertical-alignment" : "center",
+                              "font" : {
+                                "color-blue" : 1.0,
+                                "color-green" : 1.0,
+                                "color-red" : 1.0,
+                                "size" : 96.0,
+                                "tracking" : 0.0,
+                                "name" : "Montserrat",
+                                "weight" : "Regular"
+                              },
+                              "textAttributes" : {
+                                "type" : "textAttributeList",
+                                "keyframes" : [
+                                  {
+                                    "endTime" : 0,
+                                    "time" : 0,
+                                    "value" : [{"name":"fontItalic","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fgColor","rangeEnd":40,"rangeStart":0,"value":"(252,210,11,255)","valueType":"color"},{"name":"strikethrough","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":40,"rangeStart":17,"value":201,"valueType":"double"},{"name":"fontName","rangeEnd":40,"rangeStart":0,"value":"Barlow Condensed ExtraBold","valueType":"string"},{"name":"kerning","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"double"},{"name":"underline","rangeEnd":40,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontSize","rangeEnd":17,"rangeStart":0,"value":134,"valueType":"double"},{"name":"fontWeight","rangeEnd":40,"rangeStart":0,"value":700,"valueType":"int"}],
+                                    "duration" : 0
+                                  }
+                                ]
+                              }
+                            },
+                            "attributes" : {
+                              "autoRotateText" : true
+                            },
+                            "parameters" : {
+                              "translation0" : 22.2592592592589,
+                              "translation1" : 83.3333333333334,
+                              "sourceCrop0" : 0.0,
+                              "sourceCrop1" : 0.0,
+                              "sourceCrop2" : 0.0,
+                              "sourceCrop3" : 0.0,
+                              "geometryCrop0" : 0.0,
+                              "geometryCrop1" : 0.0,
+                              "geometryCrop2" : 0.0,
+                              "geometryCrop3" : 0.0
+                            },
+                            "effects" : [
+                                {
+                                  "effectName" : "DropShadow",
+                                  "bypassed" : false,
+                                  "category" : "categoryVisualEffects",
+                                  "parameters" : {
+                                    "angle" : 5.49778714378214,
+                                    "blur" : 20.3389830508475,
+                                    "color-alpha" : 1.0,
+                                    "color-blue" : 0.694117647058824,
+                                    "color-green" : 0.737254901960784,
+                                    "color-red" : 0.0980392156862745,
+                                    "enabled" : 1,
+                                    "offset" : 44.4915254237288,
+                                    "opacity" : 0.4
+                                  },
+                                  "metadata" : {
+                                    "default-DropShadow_angle" : 5.49779,
+                                    "default-DropShadow_blur" : 10.0,
+                                    "default-DropShadow_color-blue" : 0.1216,
+                                    "default-DropShadow_color-green" : 0.1216,
+                                    "default-DropShadow_color-red" : 0.1216,
+                                    "default-DropShadow_offset" : 10.0,
+                                    "presetName" : "Drop Shadow"
+                                  }
+                                },
+                                {
+                                  "_type" : "GenericBehaviorEffect",
+                                  "effectName" : "pulsating",
+                                  "bypassed" : false,
+                                  "start" : 0,
+                                  "duration" : 150                                ,
+                                  "in" : {
+                                    "attributes" : {
+                                      "name" : "grow",
+                                      "type" : 1,
+                                      "characterOrder" : 6,
+                                      "offsetBetweenCharacters" : 1,
+                                      "suggestedDurationPerCharacter" : 18,
+                                      "overlapProportion" : "3/4",
+                                      "movement" : 30,
+                                      "springDamping" : 5.0,
+                                      "springStiffness" : 50.0,
+                                      "bounceBounciness" : 0.45
+                                    }
+                                  
+                                  },
+                                  "center" : {
+                                    "attributes" : {
+                                      "name" : "pulsate",
+                                      "type" : 1,
+                                      "characterOrder" : 6,
+                                      "offsetBetweenCharacters" : "21/10",
+                                      "secondsPerLoop" : 1,
+                                      "numberOfLoops" : -1,
+                                      "delayBetweenLoops" : 0,
+                                      "offsetBetweenCharacters" : "21/10"
+                                    },
+                                    "parameters" : {
+                                      "movement" : {
+                                        "type" : "int",
+                                        "valueBounds" : {
+                                          "minValue" : 0,
+                                          "maxValue" : 31,
+                                          "defaultValue" : 27
+                                        },
+                                        "uiHints" : {
+                                          "userInterfaceType" : 4,
+                                          "unitType" : 0
+                                        },
+                                        "keyframes" : [
+                                          {
+                                            "endTime" : 0,
+                                            "time" : 0,
+                                            "value" : 27,
+                                            "duration" : 0
+                                          }
+                                        ]
+                                      },
+                                      "scale" : {
+                                        "type" : "double",
+                                        "defaultValue" : 1.08,
+                                        "valueBounds" : {
+                                          "minValue" : 0.01,
+                                          "maxValue" : 2.0,
+                                          "defaultValue" : 1.08
+                                        },
+                                        "uiHints" : {
+                                          "userInterfaceType" : 1,
+                                          "unitType" : 1
+                                        }
+                                      }
+                                    }
+                                  
+                                  },
+                                  "out" : {
+                                    "attributes" : {
+                                      "name" : "shrink",
+                                      "type" : 1,
+                                      "characterOrder" : 6,
+                                      "offsetBetweenCharacters" : 1,
+                                      "suggestedDurationPerCharacter" : "29/2",
+                                      "overlapProportion" : "1/10",
+                                      "movement" : 11,
+                                      "springDamping" : 5.0,
+                                      "springStiffness" : 50.0,
+                                      "bounceBounciness" : 0.45
+                                    }
+                                  
+                                  },
+                                  "metadata" : {
+                                    "presetName" : "Pulsating"
+                                  }
+                                }
+                            ],
+                            "start" : 0,
+                            "duration" : 150,
+                            "mediaStart" : 0,
+                            "mediaDuration" : 150,
+                            "scalar" : 1,
+                            "metadata" : {
+                              "clipSpeedAttribute" : false,
+                              "default-HAlign" : "center",
+                              "default-LineSpace" : 0.0,
+                              "default-VAlign" : "center",
+                              "default-height" : 250.0,
+                              "default-text-attributes" : "[{\"name\":\"fgColor\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":\"(252,210,11,255)\",\"valueType\":\"color\"},{\"name\":\"underline\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":0,\"valueType\":\"int\"},{\"name\":\"strikethrough\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":0,\"valueType\":\"int\"},{\"name\":\"fontItalic\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":0,\"valueType\":\"int\"},{\"name\":\"kerning\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":0,\"valueType\":\"double\"},{\"name\":\"fontSize\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":201,\"valueType\":\"double\"},{\"name\":\"fontName\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":\"Barlow Condensed ExtraBold\",\"valueType\":\"string\"},{\"name\":\"fontWeight\",\"rangeEnd\":31,\"rangeStart\":0,\"value\":700,\"valueType\":\"int\"}]",
+                              "default-translation0" : 0.0,
+                              "default-translation1" : 0.0,
+                              "default-width" : 400.0
+                            },
+                            "animationTracks" : {
+
+                            }
+                          }
+                        ],
+                          "ident" : "",
+                          "audioMuted" : false,
+                          "videoHidden" : false,
+                          "magnetic" : false,
+                          "matte" : 0,
+                          "solo" : false,
+                          "metadata" : {
+                            "IsLocked" : "False",
+                            "WinTrackHeight" : "56"
+                          }
+                      },
+                      {
+                        "trackIndex" : 2,
+                        "medias" : [
+                          {
+                            "id" : 7,
+                            "_type" : "Callout",
+                            "def" : {
+                              "kind" : "remix",
+                              "shape" : "text",
+                              "style" : "basic",
+                              "enable-ligatures" : 1.0,
+                              "height" : 213.925925925926,
+                              "line-spacing" : 0.0,
+                              "width" : 403.103318658721,
+                              "word-wrap" : 1.0,
+                              "horizontal-alignment" : "center",
+                              "resize-behavior" : "resizeText",
+                              "text" : "2022",
+                              "vertical-alignment" : "center",
+                              "font" : {
+                                "color-blue" : 1.0,
+                                "color-green" : 1.0,
+                                "color-red" : 1.0,
+                                "size" : 96.0,
+                                "tracking" : 0.0,
+                                "name" : "Montserrat",
+                                "weight" : "Regular"
+                              },
+                              "textAttributes" : {
+                                "type" : "textAttributeList",
+                                "keyframes" : [
+                                  {
+                                    "endTime" : 0,
+                                    "time" : 0,
+                                    "value" : [{"name":"strikethrough","rangeEnd":4,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontWeight","rangeEnd":4,"rangeStart":0,"value":400,"valueType":"int"},{"name":"fontSize","rangeEnd":4,"rangeStart":0,"value":194,"valueType":"double"},{"name":"fontItalic","rangeEnd":4,"rangeStart":0,"value":0,"valueType":"int"},{"name":"fontName","rangeEnd":4,"rangeStart":0,"value":"Barlow Condensed Black","valueType":"string"},{"name":"fgColor","rangeEnd":4,"rangeStart":0,"value":"(227,80,59,255)","valueType":"color"},{"name":"kerning","rangeEnd":4,"rangeStart":0,"value":0,"valueType":"double"},{"name":"underline","rangeEnd":4,"rangeStart":0,"value":0,"valueType":"int"}],
+                                    "duration" : 0
+                                  }
+                                ]
+                              }
+                            },
+                            "attributes" : {
+                              "autoRotateText" : true
+                            },
+                            "parameters" : {
+                              "translation0" : 418.092592592593,
+                              "translation1" : -387.814814814815,
+                              "rotation2" : -0.154996741923943,
+                              "sourceCrop0" : 0.0,
+                              "sourceCrop1" : 0.0,
+                              "sourceCrop2" : 0.0,
+                              "sourceCrop3" : 0.0,
+                              "geometryCrop0" : 0.0,
+                              "geometryCrop1" : 0.0,
+                              "geometryCrop2" : 0.0,
+                              "geometryCrop3" : 0.0
+                            },
+                            "effects" : [
+                                {
+                                  "effectName" : "DropShadow",
+                                  "bypassed" : false,
+                                  "category" : "categoryVisualEffects",
+                                  "parameters" : {
+                                    "angle" : 5.49779,
+                                    "blur" : 19.3220338983051,
+                                    "color-alpha" : 1.0,
+                                    "color-blue" : 0.890196078431372,
+                                    "color-green" : 0.870588235294118,
+                                    "color-red" : 0.847058823529412,
+                                    "enabled" : 1,
+                                    "offset" : 22.7118644067797,
+                                    "opacity" : 0.722033898305084
+                                  },
+                                  "metadata" : {
+                                    "default-DropShadow_blur" : 10.0,
+                                    "default-DropShadow_color-blue" : 0.1216,
+                                    "default-DropShadow_color-green" : 0.1216,
+                                    "default-DropShadow_color-red" : 0.1216,
+                                    "default-DropShadow_offset" : 10.0,
+                                    "default-DropShadow_opacity" : 0.4,
+                                    "presetName" : "Drop Shadow"
+                                  }
+                                },
+                                {
+                                  "_type" : "GenericBehaviorEffect",
+                                  "effectName" : "shifting",
+                                  "bypassed" : false,
+                                  "start" : 0,
+                                  "duration" : 150                                ,
+                                  "in" : {
+                                    "attributes" : {
+                                      "name" : "shifting",
+                                      "type" : 1,
+                                      "characterOrder" : 4,
+                                      "offsetBetweenCharacters" : "221/10",
+                                      "suggestedDurationPerCharacter" : "91/2",
+                                      "overlapProportion" : 0,
+                                      "movement" : 30,
+                                      "springDamping" : 7.0,
+                                      "springStiffness" : 50.0,
+                                      "bounceBounciness" : 0.45
+                                    }
+                                  
+                                  },
+                                  "center" : {
+                                    "attributes" : {
+                                      "name" : "shifting",
+                                      "type" : 1,
+                                      "characterOrder" : 3,
+                                      "offsetBetweenCharacters" : "49/2",
+                                      "secondsPerLoop" : "317/100",
+                                      "numberOfLoops" : -1,
+                                      "delayBetweenLoops" : 64,
+                                      "offsetBetweenCharacters" : "49/2"
+                                    },
+                                    "parameters" : {
+                                      "movement" : {
+                                        "type" : "int",
+                                        "valueBounds" : {
+                                          "minValue" : 0,
+                                          "maxValue" : 31,
+                                          "defaultValue" : 12
+                                        },
+                                        "uiHints" : {
+                                          "userInterfaceType" : 4,
+                                          "unitType" : 0
+                                        },
+                                        "keyframes" : [
+                                          {
+                                            "endTime" : 0,
+                                            "time" : 0,
+                                            "value" : 12,
+                                            "duration" : 0
+                                          }
+                                        ]
+                                      },
+                                      "shift" : {
+                                        "type" : "double",
+                                        "defaultValue" : 10.0,
+                                        "valueBounds" : {
+                                          "minValue" : 0.0,
+                                          "maxValue" : 100.0,
+                                          "defaultValue" : 5.0
+                                        },
+                                        "uiHints" : {
+                                          "userInterfaceType" : 1,
+                                          "unitType" : 0
+                                        }
+                                      }
+                                    }
+                                  
+                                  },
+                                  "out" : {
+                                    "attributes" : {
+                                      "name" : "shifting",
+                                      "type" : 1,
+                                      "characterOrder" : 4,
+                                      "offsetBetweenCharacters" : "111/5",
+                                      "suggestedDurationPerCharacter" : 100,
+                                      "overlapProportion" : "1/2",
+                                      "movement" : 14,
+                                      "springDamping" : 5.0,
+                                      "springStiffness" : 50.0,
+                                      "bounceBounciness" : 0.45
+                                    }
+                                  
+                                  },
+                                  "metadata" : {
+                                    "default-behavior-center-delay" : 0.0,
+                                    "default-behavior-center-offset" : 0.0,
+                                    "default-behavior-center-shift" : 5.0,
+                                    "default-behavior-in-offset" : 0.6,
+                                    "default-behavior-out-duration" : 13.0,
+                                    "default-behavior-out-offset" : 1.0,
+                                    "presetName" : "Shifting"
+                                  }
+                                }
+                            ],
+                            "start" : 0,
+                            "duration" : 150,
+                            "mediaStart" : 0,
+                            "mediaDuration" : 150,
+                            "scalar" : 1,
+                            "metadata" : {
+                              "clipSpeedAttribute" : false,
+                              "default-HAlign" : "center",
+                              "default-LineSpace" : 0.0,
+                              "default-VAlign" : "center",
+                              "default-height" : 250.0,
+                              "default-rotation2" : 0.0,
+                              "default-translation0" : 0.0,
+                              "default-translation1" : 0.0,
+                              "default-width" : 400.0
+                            },
+                            "animationTracks" : {
+
+                            }
+                          }
+                        ],
+                          "ident" : "",
+                          "audioMuted" : false,
+                          "videoHidden" : false,
+                          "magnetic" : false,
+                          "matte" : 0,
+                          "solo" : false,
+                          "metadata" : {
+                            "IsLocked" : "False",
+                            "WinTrackHeight" : "56"
+                          }
+                      },
+                      {
+                        "trackIndex" : 3,
+                        "medias" : [
+                          {
+                            "id" : 8,
+                            "_type" : "AMFile",
+                            "src" : 2,
+                            "trackNumber" : 0,
+                            "attributes" : {
+                              "ident" : "wave",
+                              "gain" : 1.0,
+                              "mixToMono" : false,
+                              "loudnessNormalization" : true
+                            },
+                              "channelNumber" : "0,1",
+                            "parameters" : {
+                              "volume" : {
+                                "type" : "double",
+                                "keyframes" : [
+                                  {
+                                    "endTime" : -1,
+                                    "time" : -1,
+                                    "value" : 1.0,
+                                    "duration" : 0
+                                  },
+                                  {
+                                    "endTime" : 0,
+                                    "time" : 0,
+                                    "value" : 0.0,
+                                    "duration" : 0
+                                  },
+                                  {
+                                    "endTime" : 29,
+                                    "time" : 29,
+                                    "value" : 0.5,
+                                    "duration" : 0
+                                  },
+                                  {
+                                    "endTime" : 104,
+                                    "time" : 104,
+                                    "value" : 0.576923076923077,
+                                    "duration" : 0
+                                  },
+                                  {
+                                    "endTime" : 150,
+                                    "time" : 150,
+                                    "value" : 0.0,
+                                    "duration" : 0
+                                  },
+                                  {
+                                    "endTime" : 151,
+                                    "time" : 151,
+                                    "value" : 0.730769230769231,
+                                    "duration" : 0
+                                  }
+                                ]
+                              }
+                            },
+                            "effects" : [
+
+                            ],
+                            "start" : 0,
+                            "duration" : 150,
+                            "mediaStart" : 0,
+                            "mediaDuration" : 150,
+                            "scalar" : 1,
+                            "metadata" : {
+                              "clipSpeedAttribute" : false
+                            },
+                            "animationTracks" : {
+
+                            }
+                          }
+                        ],
+                          "ident" : "",
+                          "audioMuted" : false,
+                          "videoHidden" : false,
+                          "magnetic" : false,
+                          "matte" : 0,
+                          "solo" : false,
+                          "metadata" : {
+                            "IsLocked" : "False",
+                            "WinTrackHeight" : "56"
+                          }
+                      }
+                    ],
+                    "attributes" : {
+                      "ident" : "Group 1",
+                      "widthAttr" : 1920.0,
+                      "heightAttr" : 1080.0,
+                      "gain" : 1.0,
+                      "mixToMono" : false,
+                      "assetProperties" : [
+                        {
+                          "type" : 0,
+                          "name" : "Text",
+                          "objects" : [ 6 ],
+                          "themeMappings" :  {
+                            "font-color" : "foreground-1"
+                          }
+                        },
+                        {
+                          "type" : 0,
+                          "name" : "Text",
+                          "objects" : [ 7 ],
+                          "themeMappings" :  {
+                            "font-color" : "foreground-1"
+                          }
+                        }
+                      ]
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 150,
+                    "mediaStart" : 0.0,
+                    "mediaDuration" : 150.0,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                ]
+              },
+              {
+                "trackIndex" : 2,
+                "medias" : [
+                ]
+              },
+              {
+                "trackIndex" : 3,
+                "medias" : [
+                ]
+              },
+              {
+                "trackIndex" : 4,
+                "medias" : [
+                ]
+              }            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "WinTrackHeight" : "56"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 64,
+      "backgroundColor" : [ 0, 0, 0, 191],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "gain" : 1.0,
+    "legacyAttenuateAudioMix" : false,
+    "backgroundColor" : [ 0, 89, 145, 255]
+  },
+  "metadata" : {
+    "AutoSaveFile" : "",
+    "CanvasZoom" : 54,
+    "Date" : "2021-12-06 06:38:57 AM",
+    "IsAutoSave" : false,
+    "IsStandalone" : true,
+    "Language" : "ENU",
+    "ProfileName" : "",
+    "ProjectDimensionsChanged" : "1",
+    "Title" : "start",
+    "audioNarrationNotes" : "",
+    "calloutStyle" : "Basic"
+  }
+}

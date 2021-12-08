@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>enterprise-search-logo-color-32px</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.0004 24 0.0004 24 32 0 32"></polygon>
+    </defs>
+    <g id="enterprise-search-logo-color-32px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="bounding-box" x="0" y="0" width="32" height="32"></rect>
+        <g id="Group-8">
+            <path d="M8,24.0004 L10.222,24.0004 C11.988,21.7444 13,18.9354 13,16.0004 C13,13.0644 11.988,10.2564 10.222,8.0004 L8,8.0004 C3.582,8.0004 0,11.5814 0,16.0004 C0,20.4184 3.582,24.0004 8,24.0004" id="Fill-1" fill="#FEC514"></path>
+            <g id="Group-5" transform="translate(8.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-4"></g>
+                <path d="M8,0.0004 C5.082,0.0004 2.355,0.7934 0,2.1574 C2.423,3.5614 4.442,5.5804 5.848,8.0004 L8,8.0004 C12.418,8.0004 16,11.5814 16,16.0004 C16,20.4184 12.418,24.0004 8,24.0004 L5.848,24.0004 C4.442,26.4194 2.423,28.4384 0,29.8424 C2.355,31.2064 5.082,32.0004 8,32.0004 C16.837,32.0004 24,24.8364 24,16.0004 C24,7.1634 16.837,0.0004 8,0.0004" id="Fill-3" fill="#00BFB3" mask="url(#mask-2)"></path>
+            </g>
+            <path d="M16,8.0004 L13.848,8.0004 C15.214,10.3524 16,13.0824 16,16.0004 C16,18.9174 15.214,21.6474 13.848,24.0004 L16,24.0004 C20.418,24.0004 24,20.4184 24,16.0004 C24,11.5814 20.418,8.0004 16,8.0004" id="Fill-6" fill="#343741"></path>
+        </g>
+    </g>
+</svg>
