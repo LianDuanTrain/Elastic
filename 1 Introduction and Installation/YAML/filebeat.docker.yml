@@ -1,0 +1,36 @@
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      templates:
+      - condition:
+            equals:
+              docker.container.labels.type: nginxLog
+        config:
+           - module: nginx
+             access.input:
+                type: docker
+                containers.ids:
+                 - "${data.docker.container.id}"
+                paths:
+                 - /var/lib/docker/containers/${data.docker.container.id}/*.log
+#             error.input:
+#                type: docker
+#                containers:
+#                  ids: "${data.docker.container.id}"
+#                paths:
+#                 - /var/lib/docker/containers/${data.docker.container.id}/*.log    
+
+#processors:
+#- add_cloud_metadata: ~
+setup.dashboards.enabled: true
+setup.kibana:
+   host: "kibana-01:5601"   
+output.elasticsearch:
+  hosts: '${ELASTICSEARCH_HOSTS:es-node-01:9200}'
+#  username: '${ELASTICSEARCH_USERNAME:}'
+#  password: '${ELASTICSEARCH_PASSWORD:}'
