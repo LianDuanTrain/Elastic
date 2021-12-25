@@ -1,0 +1,63 @@
+## --project-name
+version: '3.8'
+services:
+    es-node-01:
+      # network_mode: elastic
+        container_name: es-node-01
+        ports:
+            - '9200:9200'
+            - '9300:9300'
+        environment:
+            - discovery.type=single-node
+        image: 'docker.elastic.co/elasticsearch/elasticsearch:7.16.2'
+        networks:
+            - elastic
+    kibana-01:
+      # network_mode: elastic
+        container_name: kibana-01
+        ports:
+            - '5601:5601'
+        environment:
+            - 'ELASTICSEARCH_HOSTS=http://es-node-01:9200'
+        image: 'docker.elastic.co/kibana/kibana:7.16.2' 
+        healthcheck:
+            test: ["CMD", "curl", "-f", "kibana-01:5601"]
+            interval: 10s
+            timeout: 10s
+            retries: 5
+        depends_on:
+            - es-node-01
+        networks:
+            - elastic 
+
+    nginxLogGenerator:
+        container_name: nginxLogGenerator
+        labels:
+            - type=nginxLog
+        environment:
+            - RATE=10
+        image: 'kscarlett/nginx-log-generator:sha-5416ec2' 
+        depends_on:
+            - es-node-01
+            - kibana-01
+        networks:
+            - elastic 
+
+    filebeat:
+        user: root
+        container_name: filebeat
+        command: --strict.perms=false
+        volumes:
+            - /home/lian/ELK/1 Introduction and Installation/dockerCompose/filebeat.docker.yml:/usr/share/filebeat/filebeat.yml:ro
+            - /var/lib/docker/containers:/var/lib/docker/containers:ro
+            - /var/run/docker.sock:/var/run/docker.sock:ro
+        image: 'docker.elastic.co/beats/filebeat:7.16.2' 
+        depends_on:   
+             kibana-01:
+               condition: service_healthy
+    
+        networks:
+            - elastic              
+networks:
+  elastic:
+    name: elastic      
