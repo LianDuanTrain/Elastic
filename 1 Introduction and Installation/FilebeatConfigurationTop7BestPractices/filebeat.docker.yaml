@@ -1,0 +1,62 @@
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat.log
+  keepfiles: 7
+  permissions: 0600
+
+max_procs: 1
+
+queue.mem:
+  events: 2048
+  flush.min_events: 512
+
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+filebeat.inputs:
+- type: container
+  paths:
+    - /var/lib/docker/containers/*/*.log
+  multiline.type: pattern
+  multiline.pattern: '^[[:space:]]+(at|\.{3})[[:space:]]+\b|^java.lang.RuntimeException:'
+  multiline.negate: false
+  multiline.match: after
+  multiline.max_lines: 200 
+  clean_removed: true 
+  clean_inactive: 10m  
+  ignore_older: 8m  
+  close_renamed: true
+  close_removed: true
+  close_timeout: 6m
+  harvester_limit: 2
+  close_inactive: 5m
+  scan_frequency: 30s 
+  max_bytes: 20480
+
+processors:
+- add_fields:
+    target: container
+    fields:
+      env: dev
+# The following example enriches each event with the machine's local time zone
+# offset from UTC.
+#      
+- add_locale:
+      format: abbreviation
+#
+# The following example enriches each event with host metadata.
+#      
+- add_host_metadata: ~      
+# drop off
+- drop_fields:
+      fields: ["host.name", "ecs.version", "agent.version", "agent.type", "agent.id", "agent.ephemeral_id", "agent.hostname", "input.type"]
+
+
+setup.kibana:
+   host: "kibana-01:5601"   
+output.elasticsearch:
+  hosts: '${ELASTICSEARCH_HOSTS:es-node-01:9200}'
