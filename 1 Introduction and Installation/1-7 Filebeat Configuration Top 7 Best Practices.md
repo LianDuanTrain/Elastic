@@ -37,8 +37,8 @@ Paths:
 # Reduce Registry Data Size
 Paths: 
   - clean_removed:true 
-  - clean_inactive: 12m (4m*3 =12m log files get rotated every 4 mins) 
-  - ignore_older: 8m (4m*2 =8m log files, get rotated every 4 mins) 
+  - clean_inactive: 12m (4m*3 =12m, log files get rotated every 4 mins) 
+  - ignore_older: 8m (4m*2 =8m log, files, get rotated every 4 mins) 
 
 
 # Reduce Open File Handlers
@@ -51,15 +51,18 @@ Paths:
 
 # Limit CPU Resource 
 Global: 
-- max_procs: 1
+- max_procs: 1  
+  
 Paths:    
 - multiline.max_lines: 200 default is 500
 
 
 # Configuration Memory Queue
-Max Memory = max_bytes * events 
+Max Memory = max_bytes * events    
 Paths: 
  - max_bytes: 20480
+
+Global:   
 
 ```
 queue.mem:  
@@ -68,8 +71,9 @@ queue.mem:
 ```
 
 # Example Filebeat Configuration File
+https://github.com/LianDuanTrain/Elastic/tree/main/1%20Introduction%20and%20Installation/FilebeatConfigurationTop7BestPractices
 
-Summary:
+# Summary
 - 7 Best Practices
 - Run lond testing with APP log debug and info level to find parameter's value
 - Different APPs, different filebeat configuration 
