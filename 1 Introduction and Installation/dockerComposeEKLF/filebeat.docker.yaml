@@ -1,0 +1,49 @@
+logging.level: debug
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat
+  keepfiles: 7
+  permissions: 0600
+  
+filebeat.config:
+  modules:
+    path: ${path.config}/modules.d/*.yml
+    reload.enabled: false
+
+
+filebeat.autodiscover:
+  providers:
+    - type: docker
+      templates:
+      - condition:
+            equals:
+              docker.container.image: febbweiss/java-log-generator:latest
+        config:
+          - type: container
+            multiline.type: pattern
+            multiline.pattern: '^[[:space:]]+(at|\.{3})[[:space:]]+\b|^java.lang.RuntimeException:'
+            multiline.negate: false
+            multiline.match: after
+            paths:
+              - /var/lib/docker/containers/${data.docker.container.id}/*.log
+            encoding: utf-8
+
+
+processors:
+# The following example enriches each event with the machine's local time zone
+# offset from UTC.
+#      
+- add_locale:
+      format: abbreviation
+#
+# The following example enriches each event with host metadata.
+#      
+- add_host_metadata: ~    
+
+#setup.kibana:
+#   host: "kibana-01:5601"   
+#output.elasticsearch:
+#  hosts: '${ELASTICSEARCH_HOSTS:es-node-01:9200}'
+output.logstash:
+   hosts: ["logstash-01:5400"]  
