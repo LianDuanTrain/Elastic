@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    node.type: java-app-log-generator
+  name: java-app-log-generator
+  namespace: app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      node.type: java-app-log-generator
+  template:
+    metadata:
+      labels:
+        node.type: java-app-log-generator
+    spec:
+      containers:
+        - env:
+            - name: RATE
+              value: "10"
+          name: java-app-log-generator    
+          image: febbweiss/java-log-generator:latest
+

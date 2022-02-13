@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    node.type: kibana-node
+  name: kibana
+  namespace: elk
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      node.type: kibana-node
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        node.type: kibana-node
+    spec:
+      containers:
+        - env:
+            - name: ELASTICSEARCH_HOSTS
+              value: http://es-service:9200
+          image: docker.elastic.co/kibana/kibana:7.17.0
+          readinessProbe:
+            exec:
+              command:
+              - curl
+              - localhost:5601/api/status
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          livenessProbe:
+            exec:
+              command:
+              - curl
+              - localhost:5601/api/status
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          name: kibana
+          ports:
+            - containerPort: 5601
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    es.service: kibana-service
+  name: kibana-service
+  namespace: elk
+spec:
+  ports:
+    - name: "5601"
+      port: 5601
+      targetPort: 5601
+  selector:
+    node.type: kibana-node
